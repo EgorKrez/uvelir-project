@@ -1,0 +1,41 @@
+.media {
+  width: 300px;
+  height: 300px;
+}
+
+.catalogs {
+  margin-top: 20px;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  margin-top: 10px;
+}
+
+.catalog__path {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.catalog__image {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.catalog__delete {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #bf5d5d;
+  }
+}

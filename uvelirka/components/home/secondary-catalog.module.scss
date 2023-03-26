@@ -1,0 +1,42 @@
+.secondarycatalog {
+  border: 1px solid var(--secondary-catalog-border);
+  padding: 17px 55px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--secondary-catalog-background-color);
+  color: var(--secondary-catalog-color);
+  transition: top 0.1s ease-in-out, left 0.1s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 700;
+  top: 0;
+  left: 0;
+
+  &:hover {
+    left: 6px;
+    top: 6px;
+    background-color: var(--secondary-catalog-background-color-hover);
+    color: var(--secondary-catalog-color-hover);
+
+    .secondarycatalog__shadow {
+      display: none;
+    }
+  }
+}
+
+.secondarycatalog__shadow {
+  border: 1px solid var(--secondary-catalog-border);
+  padding: 17px 55px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  z-index: -1;
+}

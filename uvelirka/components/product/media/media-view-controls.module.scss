@@ -1,0 +1,36 @@
+.mediaviewcontrols {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+
+  & > * + * {
+    margin-left: 10px;
+  }
+
+  height: 50px;
+}
+
+.mediaviewcontrols__item {
+  height: 10px;
+  background-color: var(--dark-background-color);
+  position: relative;
+}
+
+.mediaviewcontrols__itemcontainer {
+  cursor: pointer;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mediaviewcontrols__itemoverlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background-color: var(--semi-dark-color);
+  z-index: 1;
+}

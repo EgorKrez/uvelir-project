@@ -1,0 +1,125 @@
+.productpage__card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 40px;
+  border: 1px solid var(--product-info-border-color);
+  flex-grow: 1;
+  min-width: 300px;
+
+  &:after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+
+    border: 1px solid var(--product-info-border-color);
+
+    content: " ";
+    z-index: -1;
+  }
+}
+
+.productpage__head {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 50vh;
+}
+
+.productpage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.productpage__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.productpage__info {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  justify-content: center;
+
+  & > * + * {
+    margin-left: 30px;
+  }
+
+}
+
+.productpage__separator {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--product-separator-color);
+}
+
+
+.productpage__price {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--dark-color);
+  letter-spacing: 2px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.productpage__pricecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.productpage__description {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid var(--product-separator-color);
+  line-height: 21px;
+  font-size: 20px;
+}
+
+.productpage__spacer {
+  flex-grow: 1;
+}
+
+.productpage__catalog {
+  display: flex;
+  flex-direction: row;
+
+  font-size: 18px;
+  color: var(--product-catalog-label-color);
+
+  //& > * + * {
+  //  border-left: 1px solid var(--light-dark-color);
+  //  margin-left: 15px;
+  //  padding-left: 15px;
+  //}
+}
+
+.productpage__name {
+  border-bottom: 1px solid var(--light-dark-color);
+  padding: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.productpage__media {
+  flex-grow: 1;
+  min-width: 400px;
+  max-width: 600px;
+  max-height: 500px;
+}

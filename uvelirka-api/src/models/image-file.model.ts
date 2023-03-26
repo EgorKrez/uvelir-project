@@ -1,0 +1,1 @@
+export type MediaFile = Express.Multer.File;

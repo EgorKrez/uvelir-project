@@ -1,0 +1,25 @@
+.catalogpage__head {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  align-items: center;
+  background-position: 50% 50%;
+  padding-bottom: 30px;
+  position: relative;
+
+  .catalogpage__path {
+    font-size: 20px;
+    color: var(--light-color);
+    margin-top: 20px;
+    background-color: var(--dark-color);
+    padding: 20px 20px 25px;
+    border: 1px solid var(--semi-dark-color);
+  }
+
+  .catalogpage__catalogs {
+    padding-top: 30px;
+  }
+}
+
+
+

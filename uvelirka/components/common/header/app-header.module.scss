@@ -1,0 +1,27 @@
+.header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.header__tab {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.header__tab_active {
+  border-radius: 50%;
+  background-color: black;
+  width: 5px;
+  height: 5px;
+  font-size: 5px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+}

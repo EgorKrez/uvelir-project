@@ -1,0 +1,35 @@
+$catalog-width: 350px;
+$catalog-height: 280px;
+$catalog-gap: 30px;
+
+.catalog {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: $catalog-width;
+  height: $catalog-height;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 30px;
+  color: var(--category-color);
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+
+  scale: 1;
+  transition: scale 0.1s ease-in-out;
+
+  position: relative;
+
+  &:hover {
+    scale: 1.04;
+  }
+}
+
+.cataloglist {
+  display: grid;
+  gap: $catalog-gap;
+  grid-template-columns: repeat(3, fit-content(100%));
+}

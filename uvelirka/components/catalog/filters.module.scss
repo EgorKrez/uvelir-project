@@ -1,0 +1,27 @@
+.filters {
+  height: fit-content;
+  width: 200px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  border-right: 1px solid var(--product-info-border-color);
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+
+  & + .filter {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid var(--product-info-border-color);
+  }
+}
+
+.filter__header {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}

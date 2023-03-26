@@ -1,0 +1,28 @@
+.path {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  height: 25px;
+
+  color: var(--dark-color);
+
+  & > * + * {
+    margin-left: 15px;
+  }
+}
+
+.path__item {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.path__item_last {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.path__separator {
+
+}
